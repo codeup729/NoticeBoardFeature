@@ -16,6 +16,7 @@
 		F95693A529797B00004718F1 /* NoticeBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95693A429797B00004718F1 /* NoticeBoardTests.swift */; };
 		F95693AF29797B00004718F1 /* NoticeBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95693AE29797B00004718F1 /* NoticeBoardUITests.swift */; };
 		F95693B129797B00004718F1 /* NoticeBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95693B029797B00004718F1 /* NoticeBoardUITestsLaunchTests.swift */; };
+		F9871F05298022D100D78998 /* NoticeBoardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9871F04298022D100D78998 /* NoticeBoardDetails.swift */; };
 		F9A55E9E297ACD6600962F3E /* NoticeBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A55E9D297ACD6600962F3E /* NoticeBoardView.xib */; };
 		F9A55EA0297AD08A00962F3E /* NoticeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A55E9F297AD08A00962F3E /* NoticeBoardView.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		F95693AA29797B00004718F1 /* NoticeBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoticeBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95693AE29797B00004718F1 /* NoticeBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardUITests.swift; sourceTree = "<group>"; };
 		F95693B029797B00004718F1 /* NoticeBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9871F04298022D100D78998 /* NoticeBoardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardDetails.swift; sourceTree = "<group>"; };
 		F9A55E9D297ACD6600962F3E /* NoticeBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeBoardView.xib; sourceTree = "<group>"; };
 		F9A55E9F297AD08A00962F3E /* NoticeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 		F956938C29797AFF004718F1 /* NoticeBoard */ = {
 			isa = PBXGroup;
 			children = (
+				F9871F032980228500D78998 /* Model */,
 				F95477CE297AB8D800A4CBA8 /* View */,
 				F956938D29797AFF004718F1 /* AppDelegate.swift */,
 				F956938F29797AFF004718F1 /* SceneDelegate.swift */,
@@ -139,6 +142,14 @@
 				F95693B029797B00004718F1 /* NoticeBoardUITestsLaunchTests.swift */,
 			);
 			path = NoticeBoardUITests;
+			sourceTree = "<group>";
+		};
+		F9871F032980228500D78998 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9871F04298022D100D78998 /* NoticeBoardDetails.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9871F05298022D100D78998 /* NoticeBoardDetails.swift in Sources */,
 				F956939229797AFF004718F1 /* ViewController.swift in Sources */,
 				F9A55EA0297AD08A00962F3E /* NoticeBoardView.swift in Sources */,
 				F956938E29797AFF004718F1 /* AppDelegate.swift in Sources */,

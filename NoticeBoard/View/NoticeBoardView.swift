@@ -9,20 +9,29 @@ import UIKit
 
 class NoticeBoardView: UIView {
 
-    
+
     @IBOutlet weak var backgroundImageView: UIImageView!
     
-    @IBOutlet weak var slideNumberLabel: UILabel!
-    
-    @IBOutlet weak var noticeboardCollectionView: UICollectionView!
-    
+    @IBOutlet weak var slideNumberView: UIView!
+    @IBOutlet var contentView: UIView!
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: .zero)
+        commitInit()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        commitInit()
     }
+    
+    func commitInit(){
+        Bundle.main.loadNibNamed("NoticeBoardView", owner: self)
+        addSubview(contentView)
+//        contentView.frame = self.bounds
+//        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
+     
     
 }
